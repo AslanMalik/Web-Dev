@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+
+    <style>
+      body {
+        font-family: serif;
+        background-color: lightblue; 
+      }
+
+      h1 {
+        font-family: sans-serif;
+        color: yellow; 
+      }
+
+      h2 {
+        color: red 
+      }
+
+      h3 {
+        font-family: sans-serif;
+        color: blue;
+      }
+
+      .date {
+        font-style: italic;
+        color: gray; 
+      }
+
+      .post {
+        background-color: white;
+        padding: 10px;
+      }
+
+      a {
+        color: blue; 
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>My blog</h1>
+
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#post1">My first post</a></li>
+      <li><a href="#post2">My second post</a></li>
+    </ul>
+
+    <div class="post">
+      <h2 id="post1">My first post</h2>
+      <p class="date">Posted today</p>
+      <p>
+        Today I learned how to cook porridge.
+      </p>
+    </div>
+
+    <div class="post">
+      <h2 id="post2">My second post</h2>
+      <p class="date">Posted later</p>
+      <p>
+        I am learning HTML step by step.
+      </p>
+    </div>
+
+  </body>
+</html>
