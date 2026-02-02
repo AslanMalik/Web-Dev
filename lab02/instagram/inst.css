@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display:flex;
+    flex:1;
+    align-items:center;
+}
+
+.left {
+    width: 60%;
+    padding: 48px 0 0 48px;
+}
+
+
+.right {
+    width: 40%;
+}
+
+div .text {
+    text-align: center;
+}
+
+.foto-center {
+    text-align: center;
+}
+
+
+div .right {
+    text-align:center;
+    margin-top: 10%;
+}
+
+b1 {
+    margin: 10px auto;
+}
+
+.right input {
+    display:block;
+    margin: 15px auto;
+}
+
+.knopka {
+    margin-bottom: 15px;
+}
+
+.right a {
+    display:block;
+    margin: 15px auto;
+}
+
+
+p {
+    text-align:center;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+li {
+    display:inline;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color:gray;
+}
+
+footer a:hover {
+    text-decoration:underline;
+}
+
+footer {
+    margin-left:10%;
+    margin-right:10%;
+    border-top: 1px solid #ddd;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* 1) правая колонка центрирует карточку */
+.right{
+  display:flex;
+  justify-content:center;
+  margin-top:10%;
+  border-left: 1px solid #ddd;
+}
+
+/* 2) карточка */
+.login-box{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+  text-align:center;
+}
+
+/* 3) инпуты как у инсты */
+.login-box input{
+  width:100%;
+  box-sizing:border-box;
+  padding:16px 18px;
+  margin:14px 0;
+  border:1px solid #d0d7de;
+  border-radius:14px;
+  font-size:16px;
+  outline:none;
+}
+
+/* 4) общие стили "кнопок" */
+.btn{
+  width:100%;
+  padding:16px 18px;
+  border-radius:999px;
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  font-size:16px;
+  cursor:pointer;
+  box-sizing:border-box;
+}
+
+/* 5) синяя кнопка Войти */
+.btn-primary{
+  background:#9fbefb;
+  color:white;
+  border:0;
+  font-weight:600;
+  margin-top:10px;
+  margin-bottom:18px;
+}
+
+/* 6) "забыли пароль?" */
+.forgot{
+  display:block;
+  margin:8px 0 22px;
+  text-decoration:none;
+  color:#111;
+  font-weight:600;
+}
+
+/* 7) нижние две кнопки */
+.btn-outline{
+  background:white;
+  border:1px solid #d0d7de;
+  color:#111;
+  margin:14px 0;
+}
+
+.btn-outline.blue{
+  border-color:#2f6bff;
+  color:#2f6bff;
+  font-weight:600;
+}
+
+/* 8) Meta */
+.meta{
+  margin-top:18px;
+}
+
+.orange{ color: #ff4d00; }
+.pink{ color: #ff2aa1; }
+

@@ -1,0 +1,242 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #1f2328;
+}
+
+
+.heador {
+    text-align:center;
+    padding: 80px 20px 40px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+
+.heador h1 {
+    font-size:48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+
+.heador p {
+    font-size: 20px;
+    color: #636c76;
+    margin-bottom: 32px;
+}
+
+
+.btn-top {
+    display: inline-block;
+    background-color: #1f2328;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.pricing-container {
+    display:flex;
+    justify-content:center;
+    max-width:1200px;
+    padding: 0px 20px 60;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.card {
+    flex:1;
+    border:1px solid #636c76;
+    background-color:white;
+    border-radius: 12px;
+    padding: 32px;
+    display:flex;
+    flex-direction:column;
+    min-width: 300px;
+    text-align:center;
+}
+
+.description {
+    color: #636c76;
+    font-size: 16px;
+    margin: 0 0 24px;
+    min-height: 48px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    position:relative;
+    top: -12px;
+    color: #636c76;
+}
+
+.period {
+    font-size: 14px;
+    color: #636c76;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+
+
+.btn-block {
+    display: block;
+    text-align: center;
+    border: 1px solid #d0d7de;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1f2328;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+ul.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align:left;
+}
+
+ul.features li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #1f2328;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 24px;
+}
+
+.subtext {
+    font-size: 12px;
+    color: #636c76;
+}
+
+
+.btn-block-dark {
+    display: block;
+    text-align: center;
+    background-color: #1f2328;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+
+.card.enterprise {
+    border: 2px solid #0969da;
+    position: relative;
+    padding-top: 48px;
+    margin-top: -16px;
+}
+
+.recommended {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0969da;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    letter-spacing: 0.5px;
+}
+
+.addons-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+}
+
+.addons-section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0 0 32px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    padding: 28px 28px 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    text-align: left;
+}
+
+.addon-card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.addon-card p {
+    color: #636c76;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+}
+
+.addon-card a {
+    color: #1f2328;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.addon-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color: #eaeef2;
+}
+
+.addon-icon--purple { background-color: #eadcff; }
+.addon-icon--green { background-color: #dcf7e3; }
+.addon-icon--blue { background-color: #d6ecff; }
+.addon-icon--pink { background-color: #f6d8ec; }
+.addon-icon--yellow { background-color: #fbe7d3; }
+.addon-icon--gold { background-color: #f9e8b0; }
+
+.badge {
+    background: #ffffff;
+    color: #1a7f37;
+    border: 1px solid #1a7f37;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+}
