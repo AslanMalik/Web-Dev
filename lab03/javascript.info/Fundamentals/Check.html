@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let age = 20;
+    if(age >= 14 && age <= 90) {}
+
+    if(!(age >= 14 && age <= 90)) {}
+
+
+    let name = prompt("Enter your name", "");
+
+    if(name == "admin") {
+        let password = prompt("Enter your password", "");
+        if(password == "TheMaster") {
+            alert("welcome to the Master!");
+        }
+        else if(password == "other") {
+            alert("wrong password");
+        }
+        else {
+            alert("canceled")
+        }
+    }
+    else if(name == "other") {
+        alert("I dont know")
+    }
+    else {
+        alert("canceled")
+    }
+
+
+</script>
+</body>
+</html>
