@@ -1,0 +1,36 @@
+<div class="card">
+  <a class="image-link" [href]="product().link" target="_blank" rel="noopener">
+    <img [src]="mainImage()" [alt]="product().name" />
+  </a>
+
+  @if (product().images?.length) {
+    <div class="thumbs">
+      @for (img of product().images; track img) {
+        <button
+          type="button"
+          class="thumb"
+          (click)="selectImage($index)"
+          [class.active]="$index === selectedIndex"
+        >
+          <img [src]="img" alt="" />
+        </button>
+      }
+    </div>
+  }
+
+  <h3 class="title">{{ product().name }}</h3>
+
+  <p class="desc">{{ product().description }}</p>
+
+  <div class="meta">
+    <span class="price">{{ product().price }} ₸</span>
+    <span class="rating">{{ stars() }} ({{ product().rating }})</span>
+  </div>
+
+  <div class="actions">
+    <a class="btn" [href]="whatsappShareUrl()" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" [href]="telegramShareUrl()" target="_blank" rel="noopener">Telegram</a>
+  </div>
+
+  <a class="kaspi" [href]="product().link" target="_blank" rel="noopener">Open on Kaspi</a>
+</div>

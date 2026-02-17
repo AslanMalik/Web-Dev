@@ -1,0 +1,115 @@
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+}
+
+
+
+.image-link img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  background: white;
+}
+
+
+.title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.desc {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.rating {
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn:hover {
+  border-color: #bbb;
+}
+
+.kaspi {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.thumbs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.thumb {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.thumb img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.thumb.active {
+  border-color: #a144eb;
+  box-shadow: 0 0 0 2px rgba(161, 68, 235, 0.15);
+}
