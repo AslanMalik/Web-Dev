@@ -1,0 +1,72 @@
+.albums {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section-header h2 {
+  margin: 0.4rem 0 0.3rem;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  margin: 0;
+}
+
+.album-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.album-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.album-item:hover,
+.album-item:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  border-color: rgba(31, 111, 235, 0.4);
+  outline: none;
+}
+
+.album-meta {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.album-id {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+.album-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #b42318;
+  background: rgba(255, 231, 230, 0.8);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(180, 35, 24, 0.25);
+}
+
+.empty {
+  color: var(--muted);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px dashed var(--line);
+}

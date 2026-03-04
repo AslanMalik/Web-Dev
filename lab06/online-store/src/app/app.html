@@ -1,0 +1,24 @@
+<div class="app-shell">
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">AB</span>
+      <div class="brand-text">
+        <span class="brand-title">Album Browser</span>
+        <span class="brand-subtitle">Routing, HTTP, and Services</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        Home
+      </a>
+      <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        About
+      </a>
+      <a routerLink="/albums" routerLinkActive="active">Albums</a>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>

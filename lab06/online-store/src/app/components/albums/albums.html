@@ -1,0 +1,40 @@
+<section class="albums">
+  <div class="section-header">
+    <div>
+      <p class="eyebrow">Albums</p>
+      <h2>Album List</h2>
+      <p class="section-subtitle">Click an album to open details or delete it from the list.</p>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="loading">Loading albums...</div>
+
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="!loading && !error && albums.length === 0" class="empty">
+    No albums available.
+  </div>
+
+  <div class="album-list" *ngIf="!loading && !error && albums.length > 0">
+    <div
+      class="album-item"
+      *ngFor="let album of albums; trackBy: trackById"
+      [routerLink]="['/albums', album.id]"
+      role="link"
+      tabindex="0"
+    >
+      <div class="album-meta">
+        <span class="album-id">#{{ album.id }}</span>
+        <h3 class="album-title">{{ album.title }}</h3>
+      </div>
+      <button
+        class="btn danger"
+        type="button"
+        (click)="deleteAlbum(album.id, $event)"
+        [disabled]="deletingIds.has(album.id)"
+      >
+        {{ deletingIds.has(album.id) ? 'Deleting...' : 'Delete' }}
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+.about {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: var(--surface);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.about-card h2 {
+  margin: 0.4rem 0 0.8rem;
+}
+
+.about-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+}
+
+.info-item h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.info-item p {
+  margin: 0;
+  font-weight: 600;
+}

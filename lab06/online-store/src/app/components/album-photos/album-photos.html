@@ -1,0 +1,25 @@
+<section class="album-photos">
+  <div class="section-header">
+    <div>
+      <p class="eyebrow">Album #{{ albumId }}</p>
+      <h2>Photo Gallery</h2>
+      <p class="section-subtitle">Hover or view captions for each photo title.</p>
+    </div>
+    <a class="btn secondary" [routerLink]="['/albums', albumId]">Back to Album</a>
+  </div>
+
+  <div *ngIf="loading" class="loading">Loading photos...</div>
+
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="!loading && !error && photos.length === 0" class="empty">
+    No photos found for this album.
+  </div>
+
+  <div class="photo-grid" *ngIf="!loading && !error && photos.length > 0">
+    <figure class="photo-card" *ngFor="let photo of photos">
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+      <figcaption>{{ photo.title }}</figcaption>
+    </figure>
+  </div>
+</section>
