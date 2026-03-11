@@ -163,6 +163,7 @@ export class ProductService {
       categoryId: 3,
       likes: 0,
     },
+    
   ];
 
   getCategories(): Category[] {

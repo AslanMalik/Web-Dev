@@ -10,5 +10,5 @@ export interface Product {
 
   // Lab 5:
   categoryId: number;
-  likes: number; // старт 0
+  likes: number; 
 }
