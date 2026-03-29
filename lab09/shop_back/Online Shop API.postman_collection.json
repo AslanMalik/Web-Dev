@@ -15,15 +15,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
@@ -39,15 +34,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/1/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/1/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
@@ -73,15 +63,10 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
@@ -106,19 +91,14 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/7/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/9/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
-                "7",
+                "9",
                 ""
               ]
             }
@@ -131,19 +111,14 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/7/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/9/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
-                "7",
+                "9",
                 ""
               ]
             }
@@ -156,15 +131,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/categories/1/products/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/categories/1/products/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "categories",
@@ -187,15 +157,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/products/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/products/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "products",
@@ -211,15 +176,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/products/1/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/products/1/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "products",
@@ -237,7 +197,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"Ping 1000-7\",\r\n    \"price\": 2000.0,\r\n    \"description\": \"Very very gay\",\r\n    \"count\": 1,\r\n    \"is_active\": true,\r\n    \"category\": 1\r\n}",
+              "raw": "{\r\n    \"name\": \"Ping 1000-7\",\r\n    \"price\": 2000.0,\r\n    \"description\": \"Very very gay\",\r\n    \"count\": 1,\r\n    \"is_active\": true,\r\n    \"category_id\": 1\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -245,15 +205,10 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:8000/api/products/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/products/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "products",
@@ -270,7 +225,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"8 лвл по жизни\",\r\n    \"price\": 2000.0,\r\n    \"description\": \"Very very gay\",\r\n    \"count\": 3,\r\n    \"is_active\": true,\r\n    \"category\": 1\r\n}",
+              "raw": "{\r\n    \"name\": \"8 лвл по жизни\",\r\n    \"price\": 2000.0,\r\n    \"description\": \"Very very gay\",\r\n    \"count\": 3,\r\n    \"is_active\": true,\r\n    \"category_id\": 1\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -278,19 +233,14 @@
               }
             },
             "url": {
-              "raw": "http://127.0.0.1:8000/api/products/1/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/products/22/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "products",
-                "1",
+                "22",
                 ""
               ]
             }
@@ -303,19 +253,14 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://127.0.0.1:8000/api/products/2/",
-              "protocol": "http",
+              "raw": "{{BASE_URL}}/api/products/22/",
               "host": [
-                "127",
-                "0",
-                "0",
-                "1"
+                "{{BASE_URL}}"
               ],
-              "port": "8000",
               "path": [
                 "api",
                 "products",
-                "2",
+                "22",
                 ""
               ]
             }
